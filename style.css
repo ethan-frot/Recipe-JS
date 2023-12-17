@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+* {
+  margin: 0px;
+  font-family: Indie Flower;
+  color: white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: gray;
+}
+
+.cocktail {
+  display: flex;
+  flex-direction: column;
+  background-color: #2980b9;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px hsl(204, 64%, 24%);
+}
+
+.control {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  font-size: 40px;
+  background: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  width: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.ingrediants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ingrediant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
